@@ -9,7 +9,7 @@ namespace webapi.Contexto
         {
         }
 
-        public DbSet<PeliculaDto> Peliculas { get; set; }
+        public DbSet<Pelicula> Peliculas { get; set; }
         public DbSet<Watchlist> Watchlists { get; set; }
 
         public DbSet<User> Users { get; set; }

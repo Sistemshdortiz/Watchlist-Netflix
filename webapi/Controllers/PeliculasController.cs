@@ -28,7 +28,6 @@ namespace webapi.Controllers
                    Genero = p.Genero,
                    Resumen = p.Resumen,
                    RutaImagen = p.RutaImagen,
-                   PeliculaId = p.PeliculaId
 
                 };
                 peliculasDto.Add(peliculaDto);

@@ -236,7 +236,12 @@ namespace webapi.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<int?>("WatchlistId")
+                        .HasColumnType("int");
+
                     b.HasKey("PeliculaId");
+
+                    b.HasIndex("WatchlistId");
 
                     b.ToTable("Peliculas");
                 });
@@ -247,16 +252,16 @@ namespace webapi.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("FechaPeliculaAgregada")
-                        .HasColumnType("datetime(6)");
+                    b.Property<string>("NombreLista")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
-                    b.Property<int>("PeliculaId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
+                    b.Property<string>("UserId")
+                        .HasColumnType("varchar(255)");
 
                     b.HasKey("WatchlistId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Watchlists");
                 });
@@ -317,6 +322,32 @@ namespace webapi.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("webapi.Datos.Pelicula", b =>
+                {
+                    b.HasOne("webapi.Datos.Watchlist", null)
+                        .WithMany("Peliculas")
+                        .HasForeignKey("WatchlistId");
+                });
+
+            modelBuilder.Entity("webapi.Datos.Watchlist", b =>
+                {
+                    b.HasOne("webapi.Models.User", "User")
+                        .WithMany("Watchlists")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("webapi.Datos.Watchlist", b =>
+                {
+                    b.Navigation("Peliculas");
+                });
+
+            modelBuilder.Entity("webapi.Models.User", b =>
+                {
+                    b.Navigation("Watchlists");
                 });
 #pragma warning restore 612, 618
         }

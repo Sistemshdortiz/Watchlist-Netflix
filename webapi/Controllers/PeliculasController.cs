@@ -35,5 +35,8 @@ namespace webapi.Controllers
 
             return Ok(peliculasDto);
         }
+
+      
+
     }
 }

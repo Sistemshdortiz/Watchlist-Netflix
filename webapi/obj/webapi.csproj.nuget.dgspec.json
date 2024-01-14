@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hdort\\source\\repos\\WatchlistNetflix_Solution\\webapi\\webapi.csproj": {}
+    "C:\\Users\\hdort\\source\\repos\\WatchlistNetflixV2\\webapi\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hdort\\source\\repos\\WatchlistNetflix_Solution\\webapi\\webapi.csproj": {
+    "C:\\Users\\hdort\\source\\repos\\WatchlistNetflixV2\\webapi\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hdort\\source\\repos\\WatchlistNetflix_Solution\\webapi\\webapi.csproj",
+        "projectUniqueName": "C:\\Users\\hdort\\source\\repos\\WatchlistNetflixV2\\webapi\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\Users\\hdort\\source\\repos\\WatchlistNetflix_Solution\\webapi\\webapi.csproj",
+        "projectPath": "C:\\Users\\hdort\\source\\repos\\WatchlistNetflixV2\\webapi\\webapi.csproj",
         "packagesPath": "C:\\Users\\hdort\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hdort\\source\\repos\\WatchlistNetflix_Solution\\webapi\\obj\\",
+        "outputPath": "C:\\Users\\hdort\\source\\repos\\WatchlistNetflixV2\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hdort\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -62,6 +62,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.25, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.11, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

@@ -3,8 +3,8 @@
     public class Watchlist
     {
         public int WatchlistId { get; set; }
-        public int UserId { get; set; }
-        public int PeliculaId { get; set; }
-        public DateTime FechaPeliculaAgregada { get; set; }
+        public string NombreLista { get; set; }
+        public User User { get; set; }
+        public List<Pelicula> Peliculas { get; set; }
     }
 }

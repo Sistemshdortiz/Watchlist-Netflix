@@ -1,6 +1,7 @@
 <script setup>
     import TheWelcome from './components/TheWelcome.vue'
     import Header from './components/Header.vue'
+    import Login from './components/Login.vue'
 </script>
 
 <template>
@@ -13,7 +14,7 @@
     </header>
 
     <main>
-        <TheWelcome />
+       <Login/>
     </main>
 </template>
 

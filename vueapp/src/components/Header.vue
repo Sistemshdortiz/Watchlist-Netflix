@@ -3,9 +3,9 @@
     <header>
         <nav>
             <ul>
-                <li><router-link to="/">Inicio</router-link></li>
-                <li><router-link to="/acerca">Acerca de</router-link></li>
-                <li><router-link to="/contacto">Contacto</router-link></li>
+                <li><router-link to="/">WATCHLIST NETFLIX</router-link></li>
+                <li><router-link to="/login">Login</router-link></li>
+                <li><router-link to="/registro">Registro</router-link></li>
             </ul>
         </nav>
     </header>
